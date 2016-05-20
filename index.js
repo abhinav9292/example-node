@@ -1,5 +1,9 @@
-var add = require('./add');
+var Calculator = require('./lib/calculator');
 
-var args = process.argv.slice(2);
-var sum = add(args);
-console.log('The sum of numbers is: ' + sum);
+var calc = Calculator();
+console.log(calc.add());
+console.log(calc.subtract());
+
+// Add editorconfig file
+// Manage test cases using Tape/Ava
+// Integrate Ava into application
